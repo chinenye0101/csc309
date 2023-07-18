@@ -15,9 +15,11 @@
     // Query
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
+    $gender = $_POST['gender'];
+    $date_of_birth = $_POST['date_of_birth'];
     $email = $_POST['email'];
 
-    $sql = "INSERT INTO users (firstname, lastname, email) 
+    $sql = "INSERT INTO users (firstname, lastname, gender, date_of_birth, email) 
     VALUES ('$firstname', '$lastname', '$email')";
 
     $result = $con->query($sql);
